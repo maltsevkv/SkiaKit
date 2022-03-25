@@ -3,3 +3,4 @@ skiasharp*
 DerivedData
 xcuserdata
 .DS_Store
+.swiftpm
