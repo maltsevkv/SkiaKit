@@ -32,9 +32,9 @@ public struct Color : Equatable {
         let l = lightness / 100.0
 
         // RGB results from 0 to 255
-        var r = l * 255.0
-        var g = l * 255.0
-        var b = l * 255.0
+        var r = UInt8(l * 255.0)
+        var g = UInt8(l * 255.0)
+        var b = UInt8(l * 255.0)
 
         // HSL from 0 to 1
         if (fabsf (s) > 0.001) {
@@ -46,12 +46,12 @@ public struct Color : Equatable {
             }
             let v1 = 2.0 * l - v2
 
-            r = 255 * Color.hueToRgb (v1, v2, h + (1.0 / 3.0))
-            g = 255 * Color.hueToRgb (v1, v2, h)
-            b = 255 * Color.hueToRgb (v1, v2, h - (1.0 / 3.0))
+            r = UInt8(255 * Color.hueToRgb (v1, v2, h + (1.0 / 3.0)))
+            g = UInt8(255 * Color.hueToRgb (v1, v2, h))
+            b = UInt8(255 * Color.hueToRgb (v1, v2, h - (1.0 / 3.0)))
         }
 
-        color = (UInt32)((alpha << 24) | (UInt8 (r) << 16) | (UInt8(g) << 8) | UInt8(b))
+        color = (UInt32)((alpha << 24) | (r << 16) | (g << 8) | b)
     }
     
     static func hueToRgb (_ v1: Float, _ v2: Float, _ vh: Float) -> Float

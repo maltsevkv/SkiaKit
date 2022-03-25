@@ -17,7 +17,7 @@ protocol Sample {
     var isLoop: Bool { get }
   
     //var category: String { get } =
-    func draw (canvas: Canvas, width: Int32, height: Int32)
+    func draw (canvas: SkiaKit.Canvas, width: Int32, height: Int32)
 }
 
 extension Sample {
@@ -53,7 +53,7 @@ struct SampleRender : UIViewRepresentable {
 struct sampleDraw : Sample {
     static var title = "Green text on aqua background"
     
-    func draw (canvas: Canvas, width: Int32, height: Int32)
+    func draw (canvas: SkiaKit.Canvas, width: Int32, height: Int32)
     {
         canvas.clear (color: Colors.yellow)
         

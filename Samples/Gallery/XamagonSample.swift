@@ -12,7 +12,7 @@ import SwiftUI
 struct sampleXamagon : Sample {
     static var title = "Xamagon"
     
-    func draw (canvas: Canvas, width: Int32, height: Int32)
+    func draw (canvas: SkiaKit.Canvas, width: Int32, height: Int32)
     {
         // Width 41.6587026 => 144.34135
         // Height 56 => 147
