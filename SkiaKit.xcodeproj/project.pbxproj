@@ -10,8 +10,7 @@
 		197FE02327EDFACA007027A5 /* libSkiaSharp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197FE02027EDF9EF007027A5 /* libSkiaSharp.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		197FE02627EDFAFC007027A5 /* libSkiaSharp.framework in Resources */ = {isa = PBXBuildFile; fileRef = 197FE02027EDF9EF007027A5 /* libSkiaSharp.framework */; };
 		197FE02827EE11D5007027A5 /* libSkiaSharp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49E975182365229D00042FE7 /* libSkiaSharp.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		197FE02927EE1451007027A5 /* libSkiaSharp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197FE02027EDF9EF007027A5 /* libSkiaSharp.framework */; };
-		197FE02A27EE1451007027A5 /* libSkiaSharp.framework in Copy libSkiaSharp */ = {isa = PBXBuildFile; fileRef = 197FE02027EDF9EF007027A5 /* libSkiaSharp.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		197FE02927EE1451007027A5 /* libSkiaSharp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197FE02027EDF9EF007027A5 /* libSkiaSharp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4902C77B23711DBA00FD5CE3 /* FontStyleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902C77A23711DBA00FD5CE3 /* FontStyleSet.swift */; };
 		4902C77C23711DBA00FD5CE3 /* FontStyleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902C77A23711DBA00FD5CE3 /* FontStyleSet.swift */; };
 		4902C77D23711DBA00FD5CE3 /* FontStyleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902C77A23711DBA00FD5CE3 /* FontStyleSet.swift */; };
@@ -310,17 +309,6 @@
 				49E975202365238A00042FE7 /* libSkiaSharp.dylib in Copy libSkiaSharp.dylib */,
 			);
 			name = "Copy libSkiaSharp.dylib";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49E9750E23649D8C00042FE7 /* Copy libSkiaSharp */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				197FE02A27EE1451007027A5 /* libSkiaSharp.framework in Copy libSkiaSharp */,
-			);
-			name = "Copy libSkiaSharp";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		49E9751423649FFF00042FE7 /* Copy libSkiaSharp.framework */ = {
@@ -921,7 +909,6 @@
 			buildConfigurationList = 49DA8E982363E8C10026FC2B /* Build configuration list for PBXNativeTarget "SkiaKit iOS" */;
 			buildPhases = (
 				49DA8E812363E8C00026FC2B /* Headers */,
-				49E9750E23649D8C00042FE7 /* Copy libSkiaSharp */,
 				49DA8E822363E8C00026FC2B /* Sources */,
 				49DA8E832363E8C00026FC2B /* Frameworks */,
 				49DA8E842363E8C00026FC2B /* Resources */,
