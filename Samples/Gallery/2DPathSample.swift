@@ -15,7 +15,9 @@ struct TwoDPathSample: Sample {
         //let fwidth = Float(width)
         //let fheight = Float (height)
         
-        canvas.clear(color: Colors.white)
+//        canvas.clear(color: Color(r: 231, g: 112, b: 133))
+        
+        canvas.clear(color: Color(hue: 0, saturation: 100, lightness: 50))
 
         let blockSize : Float = 30
 

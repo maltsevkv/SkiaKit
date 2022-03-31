@@ -51,6 +51,7 @@ public struct Color : Equatable {
             b = UInt8(255 * Color.hueToRgb (v1, v2, h - (1.0 / 3.0)))
         }
 
+//        color = (UInt32)((alpha << 24) | (r << 16) | (g << 8) | b)
         color = (UInt32)((alpha << 24) | (r << 16) | (g << 8) | b)
     }
     
